@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 				          /*# Variable and fonth */
 :root {
 	--index: calc(1vw + 1vh);
+	--transition: 1.75s cubic-bezier(.2, .6, 0, 1);
 }
 							/*# Base */
 html, body {
@@ -84,6 +85,8 @@ html, body {
 }
 .slider__wrapper{
 	will-change: transform;
+/*transition: var(--transition)!important;*/
+	--transition: 1.75s cubic-bezier(.2, .6, 0, 1);
 	transform-style: preserve-3d;
 }
 .slider__layer{
@@ -92,6 +95,7 @@ html, body {
 	background-size: cover;
 	background-position: center;
 	will-change: transform;
+	/*transition: var(--transition)!important;*/
 }
 .slider__layer::before{
 	content: '';
